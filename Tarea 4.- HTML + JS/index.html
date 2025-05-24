@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- Enlaza una hoja de estilos externa llamada "index.css" -->
+    <title>Calcular Promedio</title>
+</head>
+
+<body>
+    <main>
+        <!-- Etiqueta semántica que representa el contenido principal de la página -->
+
+        <div class="contenedor-exterior">
+            <!-- Contenedor principal con estilo (tamaño, fondo, padding, etc.) -->
+
+            <div>
+                <h3>Calcular Promedio</h3>
+            </div>
+
+            <div class="contenedor-interior">
+                <!-- Contenedor para el campo de entrada y los botones -->
+
+                <input type="number" id="nota" placeholder="Ingresar nota...">
+                <!-- Campo de entrada para que el usuario escriba una nota (número) -->
+
+                <button class="button" id="agregar">Agregar Nota</button>
+                <!-- Botón que permite agregar la nota a la lista -->
+
+                <button class="button" id="calcular">Calcular promedio</button>
+                <!-- Botón que calcula el promedio de las notas ingresadas -->
+            </div>
+
+            <div class="notas" id="listaNotas"></div>
+            <!-- Sección donde se mostrarán todas las notas agregadas -->
+
+            <div class="promedio">
+                <!-- Contenedor para mostrar el resultado del promedio -->
+                Promedio: <span id="resultado">0.00</span>
+                <!-- Este <span> se actualizará con el resultado del promedio -->
+            </div>
+
+        </div>
+    </main>
+</body>
+
+<!-- Aquí enlazas el archivo JavaScript externo que contiene toda la lógica de tu aplicación -->
+<script src="index.js"></script>
+
+</html>
