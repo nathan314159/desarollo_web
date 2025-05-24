@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario Badi</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main>
+    
+    
+    <!-- Formulario principal -->
+    <form id="formulario">
+        <h2>Formulario de Encuesta</h2>
+      <!-- Selector de provincia -->
+      <label for="provincia">Provincia:</label>
+      <select id="provincia">
+        <option value="">Seleccione</option>
+        <option value="Imbabura">Imbabura</option>
+        <option value="Carchi">Carchi</option>
+      </select>
+
+      <!-- Selector de cantón (se llena dinámicamente según la provincia) -->
+      <label for="canton">Cantón:</label>
+      <select id="canton"></select>
+
+      <!-- Tipo de parroquia: urbana o rural -->
+      <label for="tipoParroquia">Parroquia:</label>
+      <select id="tipoParroquia">
+        <option value="">Seleccione</option>
+        <option value="urbanas">Urbanas</option>
+        <option value="rurales">Rurales</option>
+      </select>
+
+      <!-- Lista de parroquias según selección -->
+      <label for="parroquia">Nombre Parroquia:</label>
+      <select id="parroquia"></select>
+
+      <hr>
+
+      <h3>Datos del Entrevistado</h3>
+
+      <!-- Campos básicos del entrevistado -->
+      <label>Comunidad:</label><input type="text" required>
+      <label>Barrio:</label><input type="text" required>
+      <label>Nombres:</label><input type="text" required>
+      <label>Apellidos:</label><input type="text" required>
+      <label>Cédula:</label><input type="text" required>
+      <label>Celular:</label><input type="text" required>
+      <label>Etnia:</label><input type="text">
+      <label>Género:</label><input type="text">
+      <label>Nivel de Educación:</label><input type="text">
+      <label>Fecha de Nacimiento:</label><input type="date">
+      <label>Edad:</label><input type="number">
+      <label>Estado Civil:</label><input type="text">
+      <label>Discapacidad:</label><input type="text">
+      <label>Enfermedad Catastrófica:</label><input type="text">
+      <label>Trabaja:</label><input type="text">
+      <label>Ocupación:</label><input type="text">
+      <label>Ingreso:</label><input type="text">
+      <label>Parentesco:</label><input type="text">
+
+      <!-- Botón para enviar el formulario -->
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <!-- Enlace al archivo de JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>
