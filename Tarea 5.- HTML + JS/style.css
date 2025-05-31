@@ -4,6 +4,55 @@
     box-sizing: border-box;
 }
 
+div {
+    margin-left: 43px;
+}
+
+input {
+    width: 290px;
+    height: 20px;
+}
+
+#agregar{
+    background-color: rgb(6, 232, 6);
+}
+#calcular{
+    background-color: rgb(79, 206, 248);
+}
+.contenedor-exterior {
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    background: rgb(255, 165, 165);
+    border-radius: 20px;
+}
+
+.contenedor-interior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 10px 0px;
+}
+.notas {
+    background: white;
+    width: 300px;
+    height: 200px;
+    overflow-y: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.promedio {
+    font-weight: bold;
+    margin-top: 10px;
+    display: none;
+}
+
+#nota {
+    height: 20px;
+    width: 100px;
+}
+
 body,
 html {
     display: flex;
@@ -20,6 +69,7 @@ html {
     align-items: center;
     padding: 30px;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 input,
@@ -62,4 +112,20 @@ ul {
     margin: 8px 0;
     width: 100%;
     list-style-type: none;
+}
+
+.mostrar {
+    background: #e6896b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    min-height: 50px;
+
+}
+
+main{
+    height: 1px;
 }
