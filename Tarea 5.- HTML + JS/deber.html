@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <!-- app promedio -->
+    <div class="contenedor-exterior">
+      <div class="contenedor-interior">
+        <h3>Calcular Promedio</h3>
+        <input type="number" id="nota" placeholder="Ingresar nota...">
+        <button class="button" id="agregar">+ Agregar Nota</button>
+        <button class="button" id="calcular">Calcular promedio</button>
+      </div>
+      <div class="notas" id="listaNotas"></div>
+      <div class="promedio">
+        Promedio: <span id="resultado">0.00</span>
+      </div>
+    </div>
+
+    <!-- collatz -->
+    <div class="container">
+      <h1>Collatz</h1>
+      <input type="text" id="calcularCollats">
+      <button id="botonCollats" class="btn">Calcular</button>
+    </div>
+    <div class="mostrar"></div>
+
+    <!-- vocales -->
+    <div class="container">
+      <h1>Separador de vocales</h1>
+      <input id="text" type="text" placeholder="Ingrese Texto" />
+      <button id="buttonVocal" class="btn" type="button">Enviar</button>
+    </div>
+    <div class="lista" id="lista">
+      <label id="emptyLabel">Lista Vacío</label>
+      <!-- Aquí se agregarán nuevos ul -->
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
