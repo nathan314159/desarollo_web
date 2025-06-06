@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- 
+INGENIERO JONNY – POR FAVOR LEER
+
+Hola ingeniero, comenté todo el código por encima porque ya comprendo cómo funciona en general. 
+Sin embargo, en las partes que no entendí del todo, profundicé los comentarios como si fueran anotaciones en un cuaderno para poder entender mejor más adelante.
+
+Le agradezco si me puede indicar si esta forma de documentar el código cumple con sus parámetros o si necesita que lo modifique de alguna otra manera.
+
+Muchas gracias por su tiempo y atención.
+-->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Plataforma de Streaming</title>
+    <meta name="description" content="Explicación sobre lo que se puede hacer con CSS y el diseño web responsivo.">
+
+    <!-- Enlace a hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- tenemos un icono -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Barra de navegación principal cada link lleva a una pagina -->
+    <nav class="navbar" role="navigation" aria-label="Menú principal">
+        <div class="logo">MiStream</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Películas</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Mi Lista</a></li>
+        </ul>
+        <!-- Botón de inicio de sesión -->
+        <button class="login-btn" onclick="login()">Iniciar sesión</button>
+    </nav>
+
+    <!-- Contenido principal del sitio -->
+    <main class="main-content">
+        <!-- Sección 1: Introducción al CSS -->
+        <section>
+            <h1 class="section-title">¿Qué se puede hacer con CSS?</h1>
+            <p class="section-text">
+                Antes de 2010, los sitios web estaban diseñados principalmente para pantallas grandes.
+                Con el auge de los dispositivos móviles surgieron varios problemas:
+            </p>
+            <ul class="section-text">
+                <li>Las páginas no se veían bien en pantallas pequeñas.</li>
+                <li>Era necesario hacer "zoom" y desplazarse horizontalmente.</li>
+                <li>La experiencia de usuario era muy pobre.</li>
+            </ul>
+            <p class="section-text">
+                <strong>Solución:</strong> se necesitaba una forma de hacer que una misma web funcionara bien en
+                cualquier dispositivo: móviles, tabletas, laptops y monitores.
+            </p>
+        </section>
+
+        <!-- Sección 2: Historia -->
+        <section>
+            <h2 class="section-title">¿Desde cuándo existe?</h2>
+            <p class="section-text">
+                El término <em>"Responsive Web Design"</em> fue propuesto por <strong>Ethan Marcotte</strong> en mayo de
+                2010, en un artículo de la revista <em>A List Apart</em>.
+                Luego lo desarrolló más profundamente en su libro de 2011.
+            </p>
+        </section>
+
+        <!-- Sección 3: Cómo funciona -->
+        <section>
+            <h2 class="section-title">¿Cómo funciona?</h2>
+            <ul class="section-text">
+                <li>Uso de unidades flexibles como %, vw, vh, em.</li>
+                <li>Flexbox y CSS Grid para crear estructuras dinámicas.</li>
+                <li>Imágenes y texto que se ajustan automáticamente.</li>
+                <li>Uso de media queries para adaptar estilos según el tamaño del dispositivo.</li>
+            </ul>
+        </section>
+
+        <!-- Sección 4: Impacto actual -->
+        <section>
+            <h2 class="section-title">Impacto actual</h2>
+            <ul class="section-text">
+                <li>Más del 50% del tráfico web proviene de móviles.</li>
+                <li>El diseño responsive es ahora un estándar obligatorio.</li>
+                <li>Google penaliza sitios que no se adaptan a móviles.</li>
+            </ul>
+        </section>
+
+        <!-- Sección 5: Ejemplo en vivo -->
+        <section class="example-section">
+            <!-- Botón para mostrar un ejemplo de media query -->
+            <button class="example-btn" onclick="mostrarEjemplo()">Ver ahora un ejemplo</button>
+
+            <!-- Ejemplo de media query que se muestra al hacer clic -->
+            <!-- <pre> — Preformatted Text (Texto preformateado) -->
+            <!-- Muestra el texto tal como está escrito en el HTML, respetando espacios y saltos de línea. Se usa para bloques de texto donde el formato importa, como código fuente, tablas, poesía, etc. -->
+
+            <!-- <code> — Código en línea o de bloque
+            Representa fragmentos de código.
+
+            Por sí solo, no cambia mucho la apariencia (aunque suele usar una fuente monoespaciada por defecto).
+
+            Generalmente se usa dentro de <pre> para mostrar código formateado correctamente. -->
+            <pre id="ejemplo-css" class="css-example" style="display:none;">
+                <code>
+                    @media (max-width: 768px) { 
+                    body {
+                    background: lightblue;}}
+
+                    aqui dice cuando la anchura maxima sea 768px el cuerpo 
+                    cambiara el color del background  lightblue
+                </code>
+            </pre>
+        </section>
+    </main>
+
+    <!-- Archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
