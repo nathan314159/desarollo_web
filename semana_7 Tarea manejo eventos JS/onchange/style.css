@@ -1,0 +1,52 @@
+/* Quita márgenes y relleno por defecto de todos los elementos, y hace que el padding y border se incluyan en el ancho total */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para centrar vertical y horizontalmente todo el contenido */
+html,
+body,
+main {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* Espacio alrededor de los elementos hijos */
+    align-items: center;
+    /* Centrado vertical */
+    background-color: lightgray;
+    /* Color de fondo general */
+}
+
+main {
+    flex-direction: column;
+    /* Organiza el contenido del main en columnas */
+    text-align: center;
+    /* Centra el texto dentro del main */
+}
+
+/* Clase usada para agrupar cada sección de select + cuadrado */
+.onchange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Elementos uno debajo del otro */
+    margin-bottom: 20px;
+    /* Espacio entre las secciones */
+}
+
+/* Estilo del cuadrado que cambia de color */
+.cuadrado-onchange {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    background: white;
+    /* Color por defecto del cuadrado */
+}
+
+/* Espacio entre los párrafos e instrucciones */
+p {
+    margin: 5px;
+}

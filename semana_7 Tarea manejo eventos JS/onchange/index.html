@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title> 
+</head>
+
+<body>
+    <main>
+        <!-- Título e instrucciones -->
+        <div>
+            <h2>Instrucciones: <br> elije un color para que cambie el cuadrado. <br><br></h2>
+        </div>
+
+        <!-- Primera sección que usa "onchange" en línea -->
+        <div class="onchange">
+            <p>En este cuadro utiliza onchange</p>
+
+            <!-- Dropdown que llama a una función cuando el usuario selecciona un color -->
+            <select name="color" id="color" onchange="cambiarColor(this.value)">
+                <option value="">Seleccione un color</option>
+                <option value="yellow">Amarillo</option>
+                <option value="blue">Azul</option>
+                <option value="red">Rojo</option>
+            </select>
+
+            <!-- Cuadro que cambiará de color con el select de arriba -->
+            <div class="cuadrado-onchange" id="cuadrado1"></div>
+        </div>
+
+        <!-- Segunda sección que usa "addEventListener" en JavaScript -->
+        <div class="onchange">
+            <p>En este cuadro utiliza addEventListener</p>
+
+            <!-- Dropdown que no tiene evento en HTML, será controlado desde JS -->
+            <select name="color" id="select-color">
+                <option value="">Seleccione un color</option>
+                <option value="green">Verde</option>
+                <option value="lightcoral">Light coral</option>
+                <option value="aqua">aqua</option>
+            </select>
+
+            <!-- Cuadro que cambiará de color usando el evento JS -->
+            <div class="cuadrado-onchange" id="cuadrado2"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
