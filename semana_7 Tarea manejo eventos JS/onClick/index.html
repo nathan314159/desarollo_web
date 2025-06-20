@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>OnClick vs EventListener</title>
+
+</head>
+
+<body>
+    <main>
+        <div><h2>Instrucciones: <br> precione el cuadrado rojo para que gire. <br><br></h2></div>
+        <!-- Contenedor que usa onclick directo en el HTML -->
+        <div class="parafo">
+
+            <p> Contenedor que usa <br> onclick directo en el HTML</p>
+            <div class="container" id="cuadrado-grande">
+                <!-- Este cuadrado llama a la función 'gira' al hacer clic -->
+                <div id="cuadrado" onclick="gira()"></div>
+            </div>
+        </div>
+
+        <!-- Contenedor que usa addEventListener desde JavaScript -->
+
+        <div class="parafo">
+            <p>Contenedor que usa <br> addEventListener desde JavaScript</p>
+
+            <div class="container2" id="cuadrado-grande2">
+                <!-- Este cuadrado será manipulado desde JS con addEventListener -->
+                <div id="cuadrado2"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

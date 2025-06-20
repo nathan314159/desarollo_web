@@ -1,0 +1,70 @@
+/* Estilo base para todo el documento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    flex-direction: column;
+    text-align: center;
+}
+
+/* El fondo ocupa todo el alto de la pantalla y centra su contenido */
+html,
+body,
+main {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* distribuye los dos cuadros con espacio entre ellos */
+    align-items: center;
+    /* centra verticalmente */
+    background-color: lightgoldenrodyellow;
+}
+
+/* Estilo para ambos contenedores (el negro grande que encierra al cuadrado rojo) */
+.container,
+.container2 {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+    /* si se aplica rotación, se anima suavemente */
+}
+
+/* Cuadrados rojos pequeños dentro de los contenedores */
+#cuadrado,
+#cuadrado2 {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    transition: transform 0.5s ease;
+    /* animación cuando se aplica transform */
+}
+
+
+
+/* Clase CSS que rota el elemento 360 grados */
+.girar {
+    transform: rotate(360deg);
+}
+
+/* para aliniar los parrafos*/
+.parafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
