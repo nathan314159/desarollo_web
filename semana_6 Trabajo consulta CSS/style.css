@@ -1,0 +1,111 @@
+        /** Estilo general del body: color de fondo, tipo de letra, márgenes y color del texto **/
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 30px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /** Estilo para el título principal (h1) **/
+        h1 {
+            text-align: center; /* Centra el texto */
+            color: #1a237e; /* Color azul oscuro */
+            margin-bottom: 20px; /* Separación hacia abajo */
+        }
+
+        /** Estilo para los subtítulos (h2) **/
+        h2 {
+            color: #1565c0; /* Color azul medio */
+            margin-top: 25px; /* Espacio antes del título */
+            cursor: pointer; /* Cambia el cursor a una mano */
+            transition: color 0.3s; /* Transición suave del color */
+            /** esta parte del código crea una transición del color de #1565c0 a #0d47a1 cuando hay hover, en 0.3 segundos **/
+        }
+
+        /** Efecto hover para h2: cambia color y subraya **/
+        h2:hover {
+            color: #0d47a1;
+            text-decoration: underline;
+        }
+
+        /** Estilo general para párrafos **/
+        p {
+            margin-bottom: 15px;
+        }
+
+        /** Caja tipo alerta o modal (se muestra al hacer clic en los h2) **/
+        .info-box {
+            background-color: #ffffff; /* Fondo blanco */
+            border-left: 6px solid #2196f3; /* Línea azul al lado izquierdo */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor */
+            padding: 15px; /* Relleno interno */
+            margin: 20px 0; /* Márgenes arriba y abajo */
+            display: none; /* Oculto por defecto */
+            animation: fadeIn 0.4s ease-in-out; /* Animación suave al aparecer */
+            border-radius: 5px; /* Bordes redondeados */
+        }
+
+        /** Animación de aparición con suavidad **/
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /** Botón para cerrar la alerta/modal **/
+        .close-btn {
+            float: right; /* Se alinea a la derecha */
+            cursor: pointer; /* Cambia el cursor a una mano */
+            font-weight: bold; /* Negrita */
+            color: #888; /* Gris claro */
+        }
+
+        /** Efecto hover para botón cerrar: cambia a negro **/
+        .close-btn:hover {
+            color: #000;
+        }
+
+        /** Estilos para la tabla que contiene los tipos de selectores **/
+        table {
+            width: 100%; /* Ocupa todo el ancho */
+            border-collapse: collapse; /* Elimina doble borde */
+            margin-top: 20px; /* Espacio arriba */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+            background-color: #ffffff; /* Fondo blanco */
+            border-radius: 6px; /* Bordes redondeados */
+            overflow: hidden; /* Oculta desbordes */
+            font-size: 15px; /* Tamaño de texto */
+        }
+
+        /** Encabezado de la tabla con fondo azul y texto blanco **/
+        thead {
+            background-color: #1976d2;
+            color: #fff;
+        }
+
+        /** Celdas de encabezado y cuerpo **/
+        th,
+        td {
+            padding: 12px 16px; /* Relleno interno */
+            text-align: left; /* Texto alineado a la izquierda */
+            border-bottom: 1px solid #ddd; /* Línea inferior gris claro */
+        }
+
+        /** Efecto al pasar el mouse por encima de una fila **/
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /** Estilo especial para los ejemplos de código dentro de celdas **/
+        td code {
+            background-color: #eeeeee; /* Fondo gris claro */
+            padding: 2px 6px; /* Espaciado interior */
+            border-radius: 4px; /* Bordes redondeados */
+            font-family: monospace; /* Fuente monoespaciada */
+            color: #d32f2f; /* Rojo oscuro */
+        }

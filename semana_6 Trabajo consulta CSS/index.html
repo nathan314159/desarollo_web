@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Investigación sobre Selectores en CSS</title>
+    <!-- Inicio del bloque de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Título principal de la página -->
+    <h1>Selectores en CSS</h1>
+
+    <!-- Párrafo introductorio (NO debe ocultarse) -->
+    <p>
+        En CSS, los <strong>selectores</strong> son las herramientas que utilizamos para seleccionar los elementos HTML
+        a los que queremos aplicar estilos. Por ejemplo, podemos cambiar el color de todos los párrafos, de un elemento
+        específico, o de los elementos dentro de una sección.
+    </p>
+
+    <!-- Sección que se puede abrir al hacer clic -->
+    <h2 onclick="mostrar('uso')">¿Cómo se usan?</h2>
+    <div class="info-box" id="uso">
+        <span class="close-btn" onclick="cerrar('uso')">&times;</span>
+        <p>Los selectores se usan para decirle al navegador qué elementos HTML deben recibir estilos. Se escriben en CSS
+            seguidos de llaves <code>{}</code>, y dentro se colocan las propiedades, por ejemplo:</p>
+        <code>p { color: red; }</code>
+    </div>
+
+    <!-- Segunda sección clicable -->
+    <h2 onclick="mostrar('tipos')">¿Cuántos tipos existen y para qué sirven?</h2>
+    <div class="info-box" id="tipos">
+        <span class="close-btn" onclick="cerrar('tipos')">&times;</span>
+        <p>Existen selectores como:</p>
+
+        <!-- Tabla explicativa de tipos de selectores -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Selector</th>
+                    <th>Ejemplo</th>
+                    <th>¿Qué selecciona?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>De tipo</td>
+                    <td><code>p</code></td>
+                    <td>Todos los elementos &lt;p&gt;</td>
+                </tr>
+                <tr>
+                    <td>De clase</td>
+                    <td><code>.rojo</code></td>
+                    <td>Elementos con class="rojo"</td>
+                </tr>
+                <tr>
+                    <td>De ID</td>
+                    <td><code>#titulo</code></td>
+                    <td>Elemento con id="titulo"</td>
+                </tr>
+                <tr>
+                    <td>Universal</td>
+                    <td><code>*</code></td>
+                    <td>Todos los elementos</td>
+                </tr>
+                <tr>
+                    <td>Descendiente</td>
+                    <td><code>div p</code></td>
+                    <td>Todos los &lt;p&gt; dentro de un &lt;div&gt;</td>
+                </tr>
+                <tr>
+                    <td>Hijo directo</td>
+                    <td><code>ul > li</code></td>
+                    <td>Los &lt;li&gt; que son hijos directos de un &lt;ul&gt;</td>
+                </tr>
+                <tr>
+                    <td>De atributo</td>
+                    <td><code>input[type="text"]</code></td>
+                    <td>Campos de texto</td>
+                </tr>
+                <tr>
+                    <td>Pseudo-clase</td>
+                    <td><code>a:hover</code></td>
+                    <td>Enlaces cuando el mouse pasa encima</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tercera sección clicable -->
+    <h2 onclick="mostrar('ejemplo')">Ejemplo práctico de selectores</h2>
+    <div class="info-box" id="ejemplo">
+        <span class="close-btn" onclick="cerrar('ejemplo')">&times;</span>
+        <p>Aquí tienes un ejemplo:</p>
+        <ul>
+            <li><code>p</code>: Cambia todos los párrafos.</li>
+            <li><code>.rojo</code>: Cambia elementos con class="rojo".</li>
+            <li><code>#titulo</code>: Cambia un elemento con ID único.</li>
+        </ul>
+    </div>
+
+    <!-- Script JavaScript para mostrar/ocultar las cajas informativas -->
+    <script src="script.js"></script>
+
+</body>
+</html>
