@@ -1,0 +1,25 @@
+/* Estilo general del cuerpo del documento */
+body {
+  font-family: Arial, sans-serif; /* Fuente principal del texto */
+  padding: 20px; /* Espaciado interno alrededor del contenido */
+}
+
+/* Estilo para cada sección de entrada */
+.input-section {
+  margin-bottom: 40px; /* Espacio inferior entre secciones */
+}
+
+/* Estilo aplicado a todos los inputs de texto */
+input {
+  padding: 10px;        /* Espaciado interno para mayor comodidad al escribir */
+  font-size: 16px;      /* Tamaño de la letra dentro del input */
+  width: 300px;         /* Ancho del campo de entrada */
+  margin-top: 10px;     /* Espacio superior entre el input y el elemento anterior */
+}
+
+/* Estilo para los contenedores que muestran el resultado */
+.output {
+  margin-top: 10px;     /* Espacio entre el input y el texto de salida */
+  font-size: 18px;      /* Tamaño de la letra del resultado */
+  color: darkblue;      /* Color del texto del resultado */
+}
