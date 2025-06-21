@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Scroll Event Example</title>
+
+</head>
+
+<!-- onscroll en el body llama a la función scrollHTML cada vez que el usuario se desplaza -->
+<body onscroll="scrollHTML()">
+
+  <!-- Mostrar los resultados de los contadores -->
+  <div class="info">
+    <p id="resultado1">Scroll (HTML onscroll): 0</p>
+    <p id="resultado2">Scroll (JS addEventListener): 0</p>
+  </div>
+
+  <!-- Contenido grande para provocar el scroll -->
+  <div class="contenido">
+    <h2>Desplázate hacia abajo para activar el evento scroll</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, mollitia...</p>
+    <!-- Puedes repetir texto si deseas -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
