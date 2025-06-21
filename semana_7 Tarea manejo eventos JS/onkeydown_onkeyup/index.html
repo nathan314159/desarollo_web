@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>onkeydown / onkeyup Example</title>
+
+</head>
+<body>
+
+  <h2>Ejemplos de <code>onkeydown</code> y <code>onkeyup</code></h2>
+
+  <!--  Sin addEventListener: usando atributos HTML -->
+  <div class="input-section">
+    <h3>1️⃣ Sin addEventListener (usando onkeydown y onkeyup directamente en HTML)</h3>
+    <input 
+      type="text" 
+      onkeydown="mostrarKeyDown(event)" 
+      onkeyup="mostrarKeyUp(event)" 
+      placeholder="Escribe algo..." />
+    <div class="output" id="salida1"></div>
+  </div>
+
+  <!--  Con addEventListener -->
+  <div class="input-section">
+    <h3>2️⃣ Con addEventListener en JavaScript</h3>
+    <input 
+      type="text" 
+      id="input2" 
+      placeholder="Escribe algo..." />
+    <div class="output" id="salida2"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
