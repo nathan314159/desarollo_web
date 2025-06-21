@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Ejemplo onfocus y onblur</title>
+</head>
+<body>
+
+  <h2>onfocus y onblur - En HTML y con addEventListener</h2>
+
+  <!-- Primer input con manejo directo en el HTML -->
+  <div class="input-group">
+    <label for="campo1">Campo con eventos en HTML:</label><br>
+    <input type="text" id="campo1" 
+           onfocus="mostrarMensaje1()" 
+           onblur="ocultarMensaje1()" 
+           placeholder="Haz clic aquí...">
+    <p class="mensaje" id="mensaje1"></p>
+  </div>
+
+  <!-- Segundo input con manejo en JS (addEventListener) -->
+  <div class="input-group">
+    <label for="campo2">Campo con addEventListener:</label><br>
+    <input type="text" id="campo2" placeholder="Haz clic aquí también...">
+    <p class="mensaje" id="mensaje2"></p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
