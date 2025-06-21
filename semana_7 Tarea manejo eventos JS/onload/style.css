@@ -1,0 +1,21 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente moderna y legible */
+    padding: 20px;
+    /* Espacio interior para separar del borde */
+    background-color: #f9f9f9;
+    /* Color de fondo suave */
+}
+
+/* Estilo para el contenedor del mensaje */
+#mensaje {
+    font-size: 20px;
+    /* Tamaño del texto del mensaje */
+    color: green;
+    /* Color verde para el texto */
+    margin-top: 20px;
+    /* Espacio superior */
+    font-weight: bold;
+    /* Negrita para resaltar */
+}
