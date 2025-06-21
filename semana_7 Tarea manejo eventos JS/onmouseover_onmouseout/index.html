@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <main>
+        <div>
+            <h2>instructiones: poner el mouse sobre la caja tomate</h2>
+        </div>
+        <div class="definicion">
+            <p>
+                <!-- Definición de onmouseover -->
+                <strong>Onmouseover:</strong> Es un evento en HTML que se activa cuando el puntero del mouse entra en un
+                elemento. <br>
+                <!-- Definición de onmouseout -->
+                <strong>Onmouseout:</strong> Es un evento que se activa cuando el puntero del mouse sale del elemento.
+                <br>
+                <!-- Explicación general del uso -->
+                Estos eventos son útiles para crear efectos visuales como resaltar, mostrar información adicional o
+                cambiar estilos dinámicamente.
+            </p>
+        </div>
+
+        <!-- Contenedor principal que agrupa ambos cuadros -->
+        <div class="contenedor-principal">
+
+            <!-- Primer cuadro (sin addEventListener, usa atributos HTML directamente) -->
+            <div class="cont">
+                <div>
+                    <p class="scroll-p">En este cuadro <strong>NO</strong> <br> se utilizó addEventListener</p>
+                </div>
+                <div class="contenedor">
+                    <!-- Aquí se aplica onmouseover y onmouseout directamente en HTML -->
+                    <div class="cuadro" id="cuadro1" onmouseover="this.style.backgroundColor='orange'"
+                        onmouseout="this.style.backgroundColor='lightcoral'"></div>
+                </div>
+            </div>
+
+            <!-- Segundo cuadro (usa addEventListener desde JavaScript) -->
+            <div class="cont">
+                <div>
+                    <p class="scroll-p">En este cuadro <strong>SÍ</strong> <br> se utiliza addEventListener</p>
+                </div>
+                <div class="contenedor">
+                    <!-- Este será modificado con JavaScript -->
+                    <div class="cuadro" id="cuadro2"></div>
+                </div>
+            </div>
+    </main>
+</body>
+<script src="scripts.js"></script>
+
+</html>

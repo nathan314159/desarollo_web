@@ -1,0 +1,74 @@
+/* Elimina márgenes y rellenos, y define el modelo de caja para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define altura total de la vista y centra contenido en columna */
+html, body, main {
+    height: 100%;
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre las columnas */
+    align-items: center;            /* Centrado vertical */
+    background-color: beige;       /* Color de fondo claro */
+}
+
+/* Configura orientación vertical para el contenido principal */
+main {
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilo para el bloque de definición de eventos */
+.definicion p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 500px;
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: aliceblue;
+}
+
+/* Estilo base de cada cuadro cuadrado */
+.cuadro {
+    height: 50px;
+    width: 50px;
+    background: lightcoral;  /* Color inicial */
+    margin: 20px;
+}
+
+/* Contenedor que contiene ambos cuadros */
+.contenedor-principal {
+    display: flex;
+    justify-content: space-around; /* Espaciado horizontal entre cuadros */
+    align-items: center;
+    gap: 100px;                    /* Separación entre los cuadros */
+    margin-top: 20px;
+}
+
+/* Contenedor del cuadro individual con borde */
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: solid;
+}
+
+/* Contenedor para el cuadro + texto */
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Espaciado inferior de los textos */
+.cont p {
+    margin-bottom: 10px;
+}
