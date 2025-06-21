@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <!-- Título e instrucciones generales -->
+    <div>
+      <h2>
+        Instrucciones: <br>
+        ingrese un texto. <br><br>
+      </h2>
+    </div>
+
+    <!-- Explicación sobre oninput -->
+    <div>
+      <p>
+        La función oninput en JavaScript se usa para detectar cuando el valor de un elemento de formulario cambia
+        mientras el usuario escribe. Es muy útil para inputs de texto, textarea, etc.
+      </p>
+    </div>
+
+    <!-- Primera sección con oninput directamente en el HTML -->
+    <div class="onchange">
+      <p>En este cuadro utiliza onchange</p>
+
+      <!-- Input de texto con función inline -->
+      <input type="text" oninput="mostrarValor(this.value)" placeholder="Escribe algo...">
+
+      <!-- Aquí se mostrará el resultado del input -->
+      <p id="resultado"></p>
+
+
+    </div>
+
+    <!-- Segunda sección controlada completamente desde JS -->
+    <div class="onchange">
+      <p class="scroll-p">En este cuadro utiliza addEventListener</p>
+
+      <!-- Input que será escuchado desde el script.js -->
+      <input type="text" id="miInput" placeholder="Escribe algo...">
+
+      <!-- Resultado dinámico también -->
+
+      <p id="res" class="scroll-p"></p> <!-- Texto extra si se necesita mostrar algo más -->
+    </div>
+  </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+    /* Reinicia márgenes y rellenos para todos los elementos y ajusta el box model */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Aplica fondo y centra el contenido del body, html y main */
+    html,
+    body,
+    main {
+      height: 100%;
+      display: flex;
+      justify-content: space-around; /* Espacio uniforme entre columnas */
+      align-items: center; /* Centrado vertical */
+      background-color: beige; /* Fondo gris claro */
+    }
+
+    /* Orientación en columna y centrado de texto dentro del main */
+    main {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    /* Estilos para las secciones de entrada */
+    .onchange {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px; /* Espacio inferior entre secciones */
+      height: 200px;
+      width: 200px;
+      background-color: aliceblue;
+      border-radius: 10px;
+      border: 1px black solid;
+      margin-top: 15px;
+    }
+
+    /* incrementar tamaño del input y otros cambios al input */
+    input{
+      height: 35px;
+      border-radius: 5px;
+      padding: 5px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    /* Estilo de los cuadros que cambian con input */
+    .cuadrado-onchange {
+      margin-top: 10px;     /* Separación respecto al input */
+      height: 100px;
+      width: 100px;
+      background: white;    /* Fondo blanco por defecto */
+    }
+
