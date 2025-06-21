@@ -1,0 +1,118 @@
+/* Reinicia márgenes, paddings y asegura modelo de caja uniforme */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Estilos base para centrar el contenido vertical y horizontalmente */
+html,
+body,
+main {
+height: 100%;
+display: flex;
+justify-content: space-around;
+/* Los items flex se alinean uniformemente de tal manera que el espacio entre dos items adyacentes es el mismo. El espacio vacío anterior al primer item y posterior al último item equivale a la mitad del espacio entre dos items adyacentes. */
+align-items: center;
+background-color: black;
+}
+
+main {
+flex-direction: column;
+text-align: center;
+}
+
+/* Caja principal donde está todo el contenido del juego */
+.contenedor {
+width: 430px;
+height: 500px;
+background-color: lightgoldenrodyellow;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-radius: 5px;
+}
+
+/* Cuadro de la cuadrícula de 3x3 */
+.matris {
+display: grid;
+grid-template-columns: 100px 100px 100px;
+/* dice 3 columnas de 100px c/u */
+grid-template-rows: 100px 100px 100px;
+/* dice 3 filas de 100px c/u */
+border: solid;
+/* borde solido*/
+border-radius: 5px;
+/*esquinas redondiadas */
+}
+
+/* Cada celda numerada */
+.num {
+border: solid 1px;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Lucida Sans', sans-serif;
+font-size: 36px;
+background-color: lightgoldenrodyellow;
+cursor: pointer;
+transition: background 0.30s;
+/* su duracion a cambiar de amarrillo a azul es de 30 segundos */
+}
+
+/* Cambio de color al pasar el mouse */
+.num:hover {
+background: lightskyblue;
+}
+
+/* Etiqueta inferior que muestra el mensaje del juego */
+label {
+margin: 20px;
+background-color: rgb(239, 239, 179);
+width: 250px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+}
+
+/* Título superior del juego */
+.title {
+margin: 20px;
+font-family: Arial, Helvetica, sans-serif;
+width: 300px;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+background-color: rgb(239, 239, 179);
+}
+
+/*  Definimos una animación personalizada llamada "girar" */
+@keyframes girar {
+    
+    /*  Estado inicial de la animación: sin rotación */
+    from {
+        transform: rotate(0deg); /* Empieza sin girar (0 grados) */
+    }
+
+    /*  Estado final de la animación: rotación completa */
+    to {
+        transform: rotate(360deg); /* Termina con una rotación completa (360 grados) */
+    }
+}
+
+/*  Clase que activa la animación de giro cuando se aplica a un elemento */
+.ganador-gira {
+    animation: girar 1s ease-in-out ;
+    /* 
+        girar        → nombre de la animación definida arriba
+        1s           → duración de una vuelta completa: 1 segundo
+        ease-in-out  → inicia y termina suave, acelera al medio
+        infinite     → la animación se repite infinitamente (no se detiene nunca)
+    */
+}
