@@ -1,0 +1,65 @@
+    /* Reset general de márgenes y caja */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Ocupa todo el alto y centra contenido */
+    html,
+    body,
+    main {
+        height: 100%;
+        display: flex;
+        justify-content: space-around; /* separación entre elementos */
+        align-items: center; /* centra verticalmente */
+        background-color: #025E73; /* fondo azul oscuro */
+    }
+
+    /* Caja rosada contenedora */
+    .contenedor {
+        width: 230px;
+        height: 300px;
+        background-color: #F2668B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 10px 10px #011F26; /* sombra negra */
+    }
+
+    /* Caja de resultado */
+    .res {
+        height: 60px;
+        width: 200px;
+        border-radius: 5px;
+        padding: 5px;
+        background: #03A688; /* verde inicial */
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estilos de los inputs */
+    input {
+        height: 30px;
+        border-radius: 5px;
+        margin: 5px;
+        padding-left: 10px;
+    }
+
+    /* Estilo del select */
+    select {
+        height: 30px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
